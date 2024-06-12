@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# Dashboard Admin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Deskripsi Proyek
 
-Currently, two official plugins are available:
+Ini adalah proyek Dashboard Admin yang dibangun menggunakan teknologi berikut:
+- **ReactJS**
+- **TypeScript**
+- **Tailwind CSS**
+- **Atomic Design System**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplikasi ini dirancang untuk memberikan antarmuka pengguna yang responsif dan mudah digunakan untuk mengelola data administratif.
 
-## Expanding the ESLint configuration
+## Demo Aplikasi
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Anda dapat mengakses aplikasi yang dihosting pada link berikut:
+[Dashboard Admin](https://dashboard-admin-alpha-jet.vercel.app/)
 
-- Configure the top-level `parserOptions` property like this:
+## Fitur
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Antarmuka pengguna yang responsif**: Dibangun dengan Tailwind CSS untuk mendukung berbagai ukuran layar.
+- **Komponen yang dapat digunakan kembali**: Menggunakan Atomic Design System untuk menciptakan komponen UI yang modular dan mudah dipelihara.
+- **TypeScript**: Untuk meningkatkan pengembangan dengan tipe yang ketat dan autocompletion.
+- **Vite**: Untuk bundling yang cepat dan ringan.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalasi
+
+Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan proyek ini secara lokal.
+
+### Prasyarat
+
+- Node.js (versi 14 atau lebih baru)
+- npm atau yarn
+
+### Langkah-langkah Instalasi
+
+1. **Clone repositori ini**
+    ```bash
+    git clone https://github.com/username/dashboard-admin.git
+    cd dashboard-admin
+    ```
+
+2. **Instal dependensi**
+    ```bash
+    npm install
+    # atau
+    yarn install
+    ```
+
+3. **Jalankan server pengembangan**
+    ```bash
+    npm run dev
+    # atau
+    yarn dev
+    ```
+
+4. **Buka aplikasi di browser**
+    Aplikasi akan terbuka di `http://localhost:3000`.
+
+

@@ -35,7 +35,7 @@ export default function TablePages() {
               onClick={() => setOpen(true)}
               className="text-gray-800 text-sm mr-0 md:mr-8 py-2 px-4 bg-[#d9e2f6] rounded-md hover:bg-[#b4c2f4] cursor-pointer"
             >
-              <h1 className="text-[#2563EB] font-semibold">Add</h1>
+              <h1 className="text-[#2563EB] font-semibold">Add Product</h1>
             </div>
           </div>
         </header>
