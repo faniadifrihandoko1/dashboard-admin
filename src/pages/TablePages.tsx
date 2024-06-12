@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../layout";
-
 import dataTable, { DataTable } from "../mocks/dataTable";
 import Tabel from "../components/Fragements/Tabel";
+import { MdOutlineAddCircle } from "react-icons/md";
 import ModalForm from "../components/Fragements/ModalForm";
 
 export default function TablePages() {
@@ -33,9 +33,10 @@ export default function TablePages() {
           <div>
             <div
               onClick={() => setOpen(true)}
-              className="text-gray-800 text-sm mr-0 md:mr-8 py-2 px-4 bg-[#d9e2f6] rounded-md hover:bg-[#b4c2f4] cursor-pointer"
+              className="text-gray-800 text-sm mr-0 md:mr-8 py-2 px-2 flex gap-1 items-center bg-[#d9e2f6] rounded-md hover:bg-[#b4c2f4] cursor-pointer"
             >
-              <h1 className="text-[#2563EB] font-semibold">Add Product</h1>
+              <MdOutlineAddCircle size={20} color="#2563EB" />
+              <h1 className="text-[#2563EB] font-semibold">Add</h1>
             </div>
           </div>
         </header>

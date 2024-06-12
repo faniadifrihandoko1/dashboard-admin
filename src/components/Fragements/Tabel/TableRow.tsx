@@ -15,7 +15,7 @@ const TableRow: React.FC<TableRowProps> = ({ data, onDelete }) => {
         <div className="text-gray-800">{data.name}</div>
       </td>
       <td className="p-2 whitespace-nowrap">
-        <div className="text-left">{data.quantity}</div>
+        <div className="text-left ml-6">{data.quantity}</div>
       </td>
       <td className="p-2 whitespace-nowrap">
         <div className="text-left text-gray-800">{formatDate(data.date)}</div>

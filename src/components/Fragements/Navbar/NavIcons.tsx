@@ -16,20 +16,20 @@ const NavIcons: React.FC<NavIconsProps> = ({ setSidebarOpen, sidebarOpen }) => {
     <>
       <IoMenuOutline
         className="block md:hidden cursor-pointer hover:text-blue-600"
-        size={30}
+        size={25}
         onClick={() => setSidebarOpen(!sidebarOpen)}
       />
       <IoIosNotificationsOutline
         className="hover:text-blue-600 cursor-pointer"
-        size={30}
+        size={25}
       />
       <IoMdInformationCircleOutline
         className="cursor-pointer hover:text-blue-600"
-        size={30}
+        size={25}
       />
       <IoMdColorPalette
         className="cursor-pointer hover:text-blue-600"
-        size={30}
+        size={25}
       />
       <img
         className="h-5 w-5 p-4 md:h-9 md:w-9 md:p-0 rounded-full ring-2 ring-white bg-blue-800 flex justify-center items-center text-white text-sm font-semibold"
