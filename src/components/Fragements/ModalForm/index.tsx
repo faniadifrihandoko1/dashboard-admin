@@ -63,7 +63,7 @@ export default function ModalForm({ setOpen, open, data, setData }: any) {
                 <InputForm
                   classNameInput="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   name="name"
-                  placeholder={"name"}
+                  placeholder={"name product"}
                   onChange={formik.handleChange}
                   required
                   value={formik.values.name}
@@ -74,10 +74,10 @@ export default function ModalForm({ setOpen, open, data, setData }: any) {
               <div className="col-span-2 sm:col-span-1">
                 <InputForm
                   classNameInput="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder={"quantity"}
+                  placeholder={"0"}
                   onChange={formik.handleChange}
                   required
-                  value={formik.values.name}
+                  value={formik.values.quantity}
                   type="number"
                   label="Quantity"
                   name="quantity"
@@ -86,10 +86,10 @@ export default function ModalForm({ setOpen, open, data, setData }: any) {
               <div className="col-span-2 sm:col-span-1">
                 <InputForm
                   classNameInput="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder={"progres"}
+                  placeholder={"1-100"}
                   onChange={formik.handleChange}
                   required
-                  value={formik.values.name}
+                  value={formik.values.progres}
                   type="number"
                   label="Progres"
                   name="progres"
@@ -102,7 +102,7 @@ export default function ModalForm({ setOpen, open, data, setData }: any) {
                   placeholder={"date"}
                   onChange={formik.handleChange}
                   required
-                  value={formik.values.name}
+                  value={formik.values.date}
                   type="date"
                   label="Date"
                   name="date"
