@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdHome, IoMdUnlock } from "react-icons/io";
 import { MdBarChart, MdOutlineShoppingCart } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
