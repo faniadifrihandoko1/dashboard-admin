@@ -13,15 +13,32 @@ const TableBody: React.FC<TableBodyProps> = ({ data, onDelete }) => {
   const filteredData = data.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase())
   );
+
   return (
     <tbody className="text-sm divide-y divide-gray-100 font-semibold relative">
-      {search === "" || search.trim() === ""
-        ? data.map((value: DataTable) => (
+      {search === "" || search.trim() === "" ? (
+        data.length > 0 ? (
+          data.map((value: DataTable) => (
             <TableRow key={value.id} data={value} onDelete={onDelete} />
           ))
-        : filteredData.map((value: DataTable) => (
-            <TableRow key={value.id} data={value} onDelete={onDelete} />
-          ))}
+        ) : (
+          <tr>
+            <td colSpan={5} className="text-center py-4">
+              No data available
+            </td>
+          </tr>
+        )
+      ) : filteredData.length > 0 ? (
+        filteredData.map((value: DataTable) => (
+          <TableRow key={value.id} data={value} onDelete={onDelete} />
+        ))
+      ) : (
+        <tr>
+          <td colSpan={5} className="text-center py-4">
+            No data available
+          </td>
+        </tr>
+      )}
     </tbody>
   );
 };
