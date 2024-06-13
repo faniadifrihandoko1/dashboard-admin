@@ -10,16 +10,22 @@ interface SidebarProps {
 }
 const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const menu = [
-    { title: "Main Dashboard", icon: <IoMdHome />, active: false },
+    {
+      title: "Main Dashboard",
+      icon: <IoMdHome />,
+      active: false,
+      to: "/main-dashboard",
+    },
     {
       title: "NFT Marketplace",
       icon: <MdOutlineShoppingCart />,
       active: false,
+      to: "/nft-marketplace",
     },
-    { title: "Data Tables", icon: <MdBarChart />, active: true },
-    { title: "Profile", icon: <FaUserAlt />, active: false },
-    { title: "Sign in", icon: <IoMdUnlock />, active: false },
-    { title: "RTL Admin", icon: <IoMdHome />, active: false },
+    { title: "Data Tables", icon: <MdBarChart />, active: true, to: "/" },
+    { title: "Profile", icon: <FaUserAlt />, active: false, to: "/profile" },
+    { title: "Sign in", icon: <IoMdUnlock />, active: false, to: "/sign-in" },
+    { title: "RTL Admin", icon: <IoMdHome />, active: false, to: "/rtl-admin" },
   ];
 
   return (
